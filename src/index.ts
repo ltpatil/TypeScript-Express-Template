@@ -3,7 +3,7 @@ import {serverConfig} from './config';
 import apirouter from './routes/index.router';
 const app = express();
 
-
+app.use(express.json());
 app.get('/', (req, res) => {
     res.send('Server is up and running!');
 });
